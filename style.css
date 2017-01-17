@@ -46,6 +46,7 @@ h1 {
 
 header time {
   margin-bottom: 1.5rem;
+  animation: blink 7s step-end infinite;
 }
 
 nav ul {
@@ -62,6 +63,28 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #76ff01;
+}
+
+nav a:hover::before,
+nav a:hover::after,
+nav a:active::before,
+nav a:active::after {
+  content: ">";
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5rem;
+}
+
+nav a:hover::after,
+nav a:active::after {
+  content: "<";
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
 main {
   margin-top: 1rem;
   max-width: 1000px;
@@ -70,18 +93,6 @@ main {
 
 main > section {
   text-align: center;
-}
-
-main > section::after {
-  content: "";
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 1px;
-  width: 80%;
-
-  background-color: #333;
 }
 
 main > section > * {
@@ -145,13 +156,16 @@ footer {
   justify-content: center;
 }
 
-@media (min-width: 750px) {
-  nav ul {
-    display: flex;
-    justify-content: center;
-  }
+@keyframes blink {
+  0% {opacity: 1;}
+  70% {opacity: 0;}
+  71% {opacity: 1;}
+  75% {opacity: 0;}
+  76% {opacity: 1;}
+  98% {opacity: 0;}
+  99% {opacity: 1;}
+}
 
-  nav li {
-    padding: 0 0.5rem;
-  }
+@media (max-width: 700px) {
+    iframe { display: none; }
 }

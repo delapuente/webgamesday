@@ -51,6 +51,7 @@ header time {
 
 nav ul {
   margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
 nav li {
@@ -63,7 +64,8 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active {
   color: #76ff01;
 }
 
@@ -148,12 +150,23 @@ main > section ul {
   padding: 0 0.5rem;
 }
 
+main figure img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+main figure figcaption {
+  margin-top: 1rem;
+}
+
 footer {
   text-align: center;
   height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 @keyframes blink {

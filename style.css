@@ -115,11 +115,57 @@ main > section h2 {
   font-family: "Joystix";
 }
 
-main > section p,
-main > section ul {
+main p,
+main ul {
   text-align: left;
   line-height: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.talk {
+  margin: 1rem;
+  padding: 1rem 0;
+  font-size: 0;
+}
+
+.talk > * {
+  font-size: 1rem;
+}
+
+.talk h3 {
+  text-align: left;
+  font-family: "Joystix";
+  margin-bottom: 0.5rem;
+}
+
+.talk p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.talk .summary {
+  border-bottom: 1px solid grey;
+  padding-bottom: 20%;
+  margin-bottom: -20%;
+  background-color: white;
+}
+
+.talk img {
+  margin: 0;
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: -20%;
+}
+
+.talk .bio {
+  padding: 1rem;
+  padding-top: 25%;
+  padding-top: calc(20% + 1rem);
+  border-top: 1px solid grey;
+  font-style: italic;
+  text-align: center;
+  background-color: #EEE;
 }
 
 .coc-contact li {

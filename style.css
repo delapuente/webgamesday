@@ -180,6 +180,22 @@ main ul {
   background-color: #EEE;
 }
 
+.twitter,
+.website {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2rem;
+}
+
+.twitter {
+  background-image: url('./imgs/social/twitter.svg');
+}
+
+.website {
+  background-image: url('./imgs/social/website.svg');
+}
+
 .coc-contact li {
   list-style: none;
   text-align: center;

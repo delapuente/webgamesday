@@ -122,14 +122,57 @@ main ul {
   margin-bottom: 1rem;
 }
 
-.talk {
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 18px 25px -15px rgba(128, 128, 128, 0.5);
+  margin-bottom: 3rem;
+}
+
+table p {
+  text-align: center;
+}
+
+thead {
+  display: none;
+}
+
+tr {
+  border: 1px solid #888;
+
+  color: #000;
+  background-color: #ddd;
+}
+
+tr.talk {
+  color: #00aed4;
+  background-color: #f8f8f8;
+}
+
+tr.talk a {
+  color: #00aed4;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 0.5rem 0.5rem;
+}
+
+tr.interim {
+  color: #d0d0d0;
+  background-color: #fff;
+}
+
+section.talk {
   margin: 1rem;
   padding: 1rem 0;
   font-size: 0;
-    box-shadow: 0px 20px 30px -10px rgba(128, 128, 128, 0.1);
+  box-shadow: 0px 30px 25px -25px rgba(128, 128, 128, 0.4);
+  padding-bottom: 0px;
+  margin-bottom: 3rem;
 }
 
-.talk.english::before {
+section.talk.english::before {
   content: "En inglés";
   font-size: 1rem;
   float: right;
@@ -141,29 +184,29 @@ main ul {
   box-shadow: 0 0 10px 0 grey;
 }
 
-.talk > * {
+section.talk > * {
   font-size: 1rem;
 }
 
-.talk h3 {
+section.talk h3 {
   text-align: left;
   font-family: "Joystix";
   margin-bottom: 0.5rem;
 }
 
-.talk p {
+section.talk p {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.talk .summary {
+section.talk .summary {
   border-bottom: 1px solid grey;
   padding-bottom: 20%;
   margin-bottom: -20%;
   background-color: white;
 }
 
-.talk img {
+section.talk img {
   margin: 0;
   width: 40%;
   height: auto;
@@ -171,7 +214,7 @@ main ul {
   margin-bottom: -20%;
 }
 
-.talk .bio {
+section.talk .bio {
   padding: 1rem;
   padding-top: 25%;
   padding-top: calc(20% + 1rem);
